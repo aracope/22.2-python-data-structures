@@ -11,3 +11,7 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    # Import statistics Library
+    import statistics
+
+    return statistics.mode(nums)

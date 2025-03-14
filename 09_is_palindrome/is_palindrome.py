@@ -21,3 +21,7 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    # Remove spaces and make lowercase
+    cleaned = phrase.replace(" ", "").lower()
+    # Compare with its reverse
+    return cleaned == cleaned[::-1]
