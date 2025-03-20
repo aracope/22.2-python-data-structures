@@ -10,3 +10,6 @@ def same_frequency(num1, num2):
         >>> same_frequency(1212, 2211)
         True
     """
+    from collections import Counter
+    
+    return Counter(str(num1)) == Counter(str(num2))

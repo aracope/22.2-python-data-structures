@@ -9,3 +9,10 @@ def min_max_keys(d):
         >>> min_max_keys({"apple": "red", "cherry": "red", "berry": "blue"})
         ('apple', 'cherry')
     """
+    
+    """
+    d.keys gives us a view of all the keys in the dictionary.
+    min and max are built in functions for python
+    The result is returned as a tuple with the smallest key first and the largest key second."
+    """
+    return (min(d.keys()), max(d.keys()))

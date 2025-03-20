@@ -18,3 +18,14 @@ def sum_up_diagonals(matrix):
         >>> sum_up_diagonals(m2)
         30
     """
+
+    total = 0
+    size = len(matrix)
+
+    for i in range(size):
+        # TL-to-BR diagonal
+        total += matrix[i][i] 
+        # BL-to-TR diagonal 
+        total += matrix[i][-1 - i]  
+
+    return total
